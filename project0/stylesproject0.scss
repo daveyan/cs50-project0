@@ -1,0 +1,20 @@
+$color: red;
+$header_content: "Things you can do under quarantine";
+
+
+h1:after {
+    content:$header_content;
+    color: $color;
+    display: block;
+    text-align: center;
+}
+
+#spinner {
+    text-align: center;
+}
+
+.p0navs {
+    a {
+        font-family: "Consolas",  "Times New Roman", Times, serif;
+      }
+}

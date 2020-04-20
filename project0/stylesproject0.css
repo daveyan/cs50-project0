@@ -1,3 +1,16 @@
+h1:after {
+  content: "Things you can do under quarantine";
+  color: red;
+  display: block;
+  text-align: center;
+}
 
+#spinner {
+  text-align: center;
+}
+
+.p0navs a {
+  font-family: "Consolas", "Times New Roman", Times, serif;
+}
 
 /*# sourceMappingURL=stylesproject0.css.map */
