@@ -1,20 +1,51 @@
-$color: red;
-$header_content: "Things you can do under quarantine";
-
+$color: blue;
+$header_content: "Why dogs are great";
+$font_family: "Calibri", Helvetica, Arial, sans-serif;
+$page1_title: "Videos";
+$page2_title: "List";
+$page3_title: "Table";
+$page4_title: "For Cat Lovers";
 
 h1:after {
-    content:$header_content;
+    content:$header_content ;
     color: $color;
     display: block;
     text-align: center;
+    font-family: $font_family;
 }
 
 #spinner {
     text-align: center;
 }
 
+.workingarea {
+    margin: 50px;
+    text-align: center;
+    font-family: $font_family;
+}
+
 .p0navs {
     a {
-        font-family: "Consolas",  "Times New Roman", Times, serif;
+       font-weight: bold;
       }
 }
+
+.p0list {
+    li {
+        text-align: left;
+    }
+}
+
+.page1::after {
+    content: $page1_title;
+}
+.page2::after {
+    content: $page2_title;
+}
+.page3::after {
+    content: $page3_title;
+}
+.page4::after {
+    content: $page4_title;
+}
+
