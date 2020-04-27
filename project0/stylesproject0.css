@@ -1,13 +1,27 @@
+/*
+CSS Properties being used
+content
+display
+text-align
+font-family
+color
+border
+border-spacing
+margin
+padding
+border-radius
+font-weight
+*/
 h1:after {
-  content: "Why dogs are great";
+  content: "Team Dogs";
   color: blue;
   display: block;
   text-align: center;
   font-family: "Calibri", Helvetica, Arial, sans-serif;
 }
 
-#spinner {
-  text-align: center;
+#indexTitle {
+  color: green;
 }
 
 .workingarea {
@@ -20,24 +34,41 @@ h1:after {
   font-weight: bold;
 }
 
-.p0list li {
-  text-align: left;
+table {
+  border-spacing: 1em;
+  margin: 10px auto;
+}
+
+td {
+  padding: 1rem 1rem;
+  border-radius: 6px;
+  border: 1px solid red;
 }
 
 .page1::after {
-  content: "Videos";
+  content: "Youtube Videos";
 }
 
 .page2::after {
-  content: "List";
+  content: "Reasons";
 }
 
 .page3::after {
-  content: "Table";
+  content: "Popular breeds";
 }
 
 .page4::after {
   content: "For Cat Lovers";
+}
+
+div > h2 {
+  border: 3px solid blue;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 720px) {
+  body {
+    background-color: grey;
+  }
 }
 
 /*# sourceMappingURL=stylesproject0.css.map */

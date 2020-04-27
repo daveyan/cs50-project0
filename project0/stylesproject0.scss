@@ -1,11 +1,28 @@
 $color: blue;
-$header_content: "Why dogs are great";
+$header_content: "Team Dogs";
 $font_family: "Calibri", Helvetica, Arial, sans-serif;
-$page1_title: "Videos";
-$page2_title: "List";
-$page3_title: "Table";
+$page1_title: "Youtube Videos";
+$page2_title: "Reasons";
+$page3_title: "Popular breeds";
 $page4_title: "For Cat Lovers";
 
+/*
+CSS Properties being used
+content
+display
+text-align
+font-family
+color
+border
+border-spacing
+margin
+padding
+border-radius
+font-weight
+*/
+
+
+//pseudo class
 h1:after {
     content:$header_content ;
     color: $color;
@@ -14,10 +31,12 @@ h1:after {
     font-family: $font_family;
 }
 
-#spinner {
-    text-align: center;
+//id selector
+#indexTitle {
+    color: green;
 }
 
+//class selector
 .workingarea {
     margin: 50px;
     text-align: center;
@@ -30,12 +49,21 @@ h1:after {
       }
 }
 
-.p0list {
-    li {
-        text-align: left;
-    }
+//element selector
+table {
+    border-spacing: 1em;
+    margin: 10px auto;
 }
 
+
+
+td {
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    border: 1px solid red;
+}
+
+//after selector
 .page1::after {
     content: $page1_title;
 }
@@ -49,3 +77,16 @@ h1:after {
     content: $page4_title;
 }
 
+// element > element selector
+
+div > h2 {
+    border: 3px solid blue;
+  }
+
+
+//media query
+@media only screen and (min-width:240px) and (max-width: 720px) {
+    body {
+      background-color: grey;
+    }
+  }
