@@ -45,6 +45,15 @@ td {
   border: 1px solid red;
 }
 
+.page4::after, .page3::after, .page2::after, .page1::after, .home::after {
+  border: 1px dotted blue;
+  padding: 5px;
+}
+
+.home::after {
+  content: "Home";
+}
+
 .page1::after {
   content: "Youtube Videos";
 }
@@ -62,7 +71,8 @@ td {
 }
 
 div > h2 {
-  border: 3px solid blue;
+  border: 5px solid blue;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 240px) and (max-width: 720px) {

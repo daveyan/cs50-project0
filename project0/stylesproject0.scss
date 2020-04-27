@@ -1,6 +1,7 @@
 $color: blue;
 $header_content: "Team Dogs";
 $font_family: "Calibri", Helvetica, Arial, sans-serif;
+$home_title: "Home";
 $page1_title: "Youtube Videos";
 $page2_title: "Reasons";
 $page3_title: "Popular breeds";
@@ -63,24 +64,39 @@ td {
     border: 1px solid red;
 }
 
-//after selector
+
+%pageLink {
+    border: 1px dotted blue;
+    padding: 5px;
+}
+
+//after selector extending pageLink
+.home::after{
+    @extend %pageLink;
+    content: $home_title;
+}
 .page1::after {
+    @extend %pageLink;
     content: $page1_title;
 }
 .page2::after {
+    @extend %pageLink;
     content: $page2_title;
 }
 .page3::after {
+    @extend %pageLink;
     content: $page3_title;
 }
 .page4::after {
+    @extend %pageLink;
     content: $page4_title;
 }
 
 // element > element selector
 
 div > h2 {
-    border: 3px solid blue;
+    border: 5px solid blue;
+    padding: 10px;
   }
 
 
